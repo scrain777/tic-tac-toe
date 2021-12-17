@@ -10,12 +10,10 @@
 #include <ctime>
 #include <string>
 
-using namespace std;
+#include "player.h"
 
-//Constants
-const int DIM = 3;
-const char EMPTY = ' ';
-const char TIE = '\0';
+using namespace std;
+using namespace game;
 
 //Prototypes
 int gameMode();
