@@ -1,0 +1,6 @@
+*.db*
+Browse.VC.opendb
+*.sqlite
+.suo
+ProjectSettings.json
+VSWorkspaceState.json
