@@ -4,3 +4,5 @@ Browse.VC.opendb
 .suo
 ProjectSettings.json
 VSWorkspaceState.json
+*.o
+tictactoe

@@ -16,23 +16,27 @@ class Player
 {
 public:
 	virtual void turn(char board[][DIM], int size, char me, char other)=0;
+        virtual ~Player() {}
 };
 
-class HumanPlayer : Player
+class HumanPlayer : public Player
 {
 public:
+        HumanPlayer() {}
 	void turn(char board[][DIM], int size, char me, char other);
 };
 
-class StupidPlayer : Player
+class StupidPlayer : public Player
 {
 public:
+        StupidPlayer() {}
 	void turn(char board[][DIM], int size, char me, char other);
 };
 
-class SimplePlayer : Player
+class SimplePlayer : public StupidPlayer
 {
 public:
+        SimplePlayer() {}
 	void turn(char board[][DIM], int size, char me, char other);
 };
 
